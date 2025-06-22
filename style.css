@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    font-size: 2em;
+}
+
+ul li{
+    list-style: none;
+}
+
+.header i{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 120px;
+}
+
+.left{
+    padding-top: 80px;
+    width: 30%;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+#title{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+.box{
+    width: 300px;
+}
+.box h1{
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.box img{
+    width: 250px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@media(max-width: 390px){
+    ul{
+        display: none;
+    }
+    .header{
+        padding: 5px 20px;
+    }
+    .header i{
+        display: block;
+        font-size: 2em;
+    }
+    .hero{
+        display: block;
+    }
+    .left{
+        padding-top: 10px;
+        width: 80%;
+        padding-left: 40px;
+    }
+    .right img{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .container{
+        display: block;
+        margin-left: 66px;
+    }
+    .box{
+        margin-top: 30px;
+    }
+}
+
+/* 391px -- 450px */
+@media(min-width: 391px) and (max-width: 450px){
+    ul{
+        display: none;
+    }
+    .header i{
+        display: block;
+        font-size: 2em;
+
+    }
+    .hero{
+        display: block;
+    }
+    .left{
+        padding-top: 10px;
+        width: 80%;
+        padding-left: 40px;
+    }
+    .right img{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .container{
+        display: block;
+        margin-left: 60px;
+    }
+    .box img{
+        width: 300px;
+    }
+    .box h1{
+        font-size: 1.8em;
+    }
+    .box p{
+        font-size: 2em;
+    }
+    .box {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width: 451px) and (max-width: 900px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-left: 120px;
+        gap: 60px;
+    }
+}
+
+@media(min-width: 450px) and (max-width: 660px){
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left{
+        width: 100%;
+        margin: 0 120px;
+    }
+    .header ul{
+        display: none;
+    }
+
+    .header i{
+        display: block;
+        font-size: 2em;
+    }
+}
